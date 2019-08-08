@@ -47,14 +47,18 @@ Platform :ref:`platform_sifive`: SiFive brings the power of open source and soft
 Configuration
 -------------
 
-Please use ``e310-arty`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``artix7_35t & artix7_100t`` ID for :ref:`board_artix7_35t` & :ref:`board_artix7_100t`:
 
 .. code-block:: ini
 
-  [env:e310-arty]
-  platform = sifive
-  board = e310-arty
-
+  [env:artix7_35t]
+  platform = Shakti
+  board = artix7_35t
+  
+  [env:artix7_100t]
+  platform = Shakti
+  board = artix7_100t
+  
 You can override default Arty FPGA Dev Kit settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `e310-arty.json <https://github.com/platformio/platform-sifive/blob/master/boards/e310-arty.json>`_. For example,
@@ -62,15 +66,13 @@ board manifest `e310-arty.json <https://github.com/platformio/platform-sifive/bl
 
 .. code-block:: ini
 
-  [env:e310-arty]
-  platform = sifive
-  board = e310-arty
-
-  ; change microcontroller
-  board_build.mcu = fe310
-
-  ; change MCU frequency
-  board_build.f_cpu = 450000000L
+  [env:artix7_35t]
+  platform = Shakti
+  board = artix7_35t
+  
+  [env:artix7_100t]
+  platform = Shakti
+  board = artix7_100t
 
 
 Uploading
