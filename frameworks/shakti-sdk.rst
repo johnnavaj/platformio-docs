@@ -9,13 +9,13 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _framework_freedom-e-sdk:
+.. _framework_shakti_sdk:
 
-Freedom E SDK
+Shakti-sdk
 =============
 
 :Configuration:
-  :ref:`board_artix7_35t` = ``freedom-e-sdk``
+  :ref:`board_artix7_35t` = ``shakti-sdk``
 
 Open Source Software for Developing on the Shakti-sdk Platform
 
