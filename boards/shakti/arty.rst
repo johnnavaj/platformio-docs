@@ -24,13 +24,13 @@ Platform :ref:`platform_sifive`: SiFive brings the power of open source and soft
 .. list-table::
 
   * - **Microcontroller**
-    - FE310
+    - E-Class
   * - **Frequency**
-    - 450MHz
+    - 50MHz
   * - **Flash**
-    - 16MB
+    - N/A
   * - **RAM**
-    - 256MB
+    - 128KB
   * - **Vendor**
     - `Xilinx <https://store.digilentinc.com/arty-a7-artix-7-fpga-development-board-for-makers-and-hobbyists/?utm_source=platformio&utm_medium=docs>`__
 
