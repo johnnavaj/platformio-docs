@@ -21,19 +21,28 @@ Hardware
 
 Platform :ref:`platform_sifive`: SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
+
 .. list-table::
+    :header-rows:  1
 
-  * - **Microcontroller**
-    - E-Class
-  * - **Frequency**
-    - 50MHz
-  * - **Flash**
-    - N/A
-  * - **RAM**
-    - 128KB
-  * - **Vendor**
-    - `Xilinx <https://store.digilentinc.com/arty-a7-artix-7-fpga-development-board-for-makers-and-hobbyists/?utm_source=platformio&utm_medium=docs>`__
-
+    * - Name
+      - Platform
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_artix7_35t`
+      - :ref:`platform_shakti`
+      - E-Class
+      - 50MHz
+      - 0KB
+      - 128KB
+    * - :ref:`board_artix7_100t`
+      - :ref:`platform_shakti`
+      - C-Class
+      - 50MHz
+      - 0KB
+      - 128MB
 
 Configuration
 -------------
@@ -70,24 +79,12 @@ Arty FPGA Dev Kit supports the next uploading protocols:
 
 * ``ftdi``
 * ``jlink``
-* ``minimodule``
-* ``olimex-arm-usb-ocd``
-* ``olimex-arm-usb-ocd-h``
-* ``olimex-arm-usb-tiny-h``
-* ``olimex-jtag-tiny``
-* ``tumpa``
+
 
 Default protocol is ``ftdi``
 
-You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
-.. code-block:: ini
 
-  [env:e310-arty]
-  platform = sifive
-  board = e310-arty
-
-  upload_protocol = ftdi
 
 Debugging
 ---------
@@ -116,27 +113,7 @@ Arty FPGA Dev Kit has on-board debug probe and **IS READY** for debugging. You d
   * - :ref:`debugging_tool_jlink`
     - 
     - 
-  * - :ref:`debugging_tool_minimodule`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-ocd`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-jtag-tiny`
-    - 
-    - 
-  * - :ref:`debugging_tool_qemu`
-    - Yes
-    - 
-  * - :ref:`debugging_tool_tumpa`
-    - 
-    - 
+
 
 Frameworks
 ----------
@@ -146,5 +123,5 @@ Frameworks
     * - Name
       - Description
 
-    * - :ref:`framework_freedom-e-sdk`
+    * - :ref:`framework_shakti_sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
