@@ -15,9 +15,9 @@ Freedom E SDK
 =============
 
 :Configuration:
-  :ref:`projectconf_env_framework` = ``freedom-e-sdk``
+  :ref:`board_artix7_35t` = ``freedom-e-sdk``
 
-Open Source Software for Developing on the SiFive Freedom E Platform
+Open Source Software for Developing on the Shakti-sdk Platform
 
 For more detailed information please visit `vendor site <https://github.com/sifive/freedom-e-sdk?utm_source=platformio&utm_medium=docs>`_.
 
@@ -64,32 +64,19 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_sifive_e310-arty`
-      - :ref:`platform_sifive`
-      - FE310
-      - 450MHz
-      - 16MB
-      - 256MB
-    * - :ref:`board_sifive_hifive-unleashed`
-      - :ref:`platform_sifive`
-      - FU540
-      - 1500MHz
-      - 32MB
-      - 8GB
-    * - :ref:`board_sifive_hifive1`
-      - :ref:`platform_sifive`
-      - FE310
-      - 320MHz
-      - 16MB
-      - 16KB
-    * - :ref:`board_sifive_hifive1-revb`
-      - :ref:`platform_sifive`
-      - FE310
-      - 320MHz
-      - 16MB
-      - 16KB
-
-
+    * - :ref:`board_artix7_35t`
+      - :ref:`platform_shakti`
+      - E-Class
+      - 50MHz
+      - 0 bytes
+      - 128KB
+    * - :ref:`board_artix7_100t`
+      - :ref:`platform_shakti`
+      - C-Class
+      - 50MHz
+      - 0 bytes
+      - 128MB
+ 
 Examples
 --------
 
