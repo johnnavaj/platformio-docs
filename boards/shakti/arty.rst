@@ -59,22 +59,6 @@ Please use ``artix7_35t & artix7_100t`` ID for :ref:`board_artix7_35t` & :ref:`b
   platform = Shakti
   board = artix7_100t
   
-You can override default Arty FPGA Dev Kit settings per build environment using
-``board_***`` option, where ``***`` is a JSON object path from
-board manifest `e310-arty.json <https://github.com/platformio/platform-sifive/blob/master/boards/e310-arty.json>`_. For example,
-``board_build.mcu``, ``board_build.f_cpu``, etc.
-
-.. code-block:: ini
-
-  [env:artix7_35t]
-  platform = Shakti
-  board = artix7_35t
-  
-  [env:artix7_100t]
-  platform = Shakti
-  board = artix7_100t
-
-
 Uploading
 ---------
 Arty FPGA Dev Kit supports the next uploading protocols:
@@ -84,9 +68,6 @@ Arty FPGA Dev Kit supports the next uploading protocols:
 
 
 Default protocol is ``ftdi``
-
-
-
 
 Debugging
 ---------
