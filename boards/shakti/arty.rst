@@ -111,8 +111,8 @@ Arty FPGA Dev Kit has on-board debug probe and **IS READY** for debugging. You d
     - Yes
     - Yes
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    - Yes
+    - Yes
 
 
 Frameworks
