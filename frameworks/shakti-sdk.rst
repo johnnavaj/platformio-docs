@@ -80,7 +80,7 @@ You do not need to use/buy external debug probe.
 Examples
 --------
 
-* `Freedom E SDK for SiFive <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Shakti-sdk <https://github.com/platformio/platform-shakti/tree/develop/examples>`_
 
 Platforms
 ---------
