@@ -9,15 +9,15 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _framework_freedom-e-sdk:
+.. _framework_shakti_sdk:
 
-Freedom E SDK
+Shakti-sdk
 =============
 
 :Configuration:
-  :ref:`projectconf_env_framework` = ``freedom-e-sdk``
+  :ref:`board_artix7_35t` = ``shakti-sdk``
 
-Open Source Software for Developing on the SiFive Freedom E Platform
+Open Source Software for Developing on the Shakti-sdk Platform
 
 For more detailed information please visit `vendor site <https://github.com/sifive/freedom-e-sdk?utm_source=platformio&utm_medium=docs>`_.
 
@@ -64,36 +64,23 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_sifive_e310-arty`
-      - :ref:`platform_sifive`
-      - FE310
-      - 450MHz
-      - 16MB
-      - 256MB
-    * - :ref:`board_sifive_hifive-unleashed`
-      - :ref:`platform_sifive`
-      - FU540
-      - 1500MHz
-      - 32MB
-      - 8GB
-    * - :ref:`board_sifive_hifive1`
-      - :ref:`platform_sifive`
-      - FE310
-      - 320MHz
-      - 16MB
-      - 16KB
-    * - :ref:`board_sifive_hifive1-revb`
-      - :ref:`platform_sifive`
-      - FE310
-      - 320MHz
-      - 16MB
-      - 16KB
-
-
+    * - :ref:`board_artix7_35t`
+      - :ref:`platform_shakti`
+      - E-Class
+      - 50MHz
+      - 0 bytes
+      - 128KB
+    * - :ref:`board_artix7_100t`
+      - :ref:`platform_shakti`
+      - C-Class
+      - 50MHz
+      - 0 bytes
+      - 128MB
+ 
 Examples
 --------
 
-* `Freedom E SDK for SiFive <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Shakti-sdk <https://github.com/platformio/platform-shakti/tree/develop/examples>`_
 
 Platforms
 ---------
@@ -103,8 +90,8 @@ Platforms
     * - Name
       - Description
 
-    * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+    * - :ref:`platform_shakti`
+      - Shakti brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
 Boards
 ------
@@ -114,46 +101,11 @@ Boards
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
 
-SiFive
-~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_sifive_hifive-unleashed`
-      - :ref:`platform_sifive`
-      - On-board
-      - FU540
-      - 1500MHz
-      - 32MB
-      - 8GB
-    * - :ref:`board_sifive_hifive1`
-      - :ref:`platform_sifive`
-      - On-board
-      - FE310
-      - 320MHz
-      - 16MB
-      - 16KB
-    * - :ref:`board_sifive_hifive1-revb`
-      - :ref:`platform_sifive`
-      - On-board
-      - FE310
-      - 320MHz
-      - 16MB
-      - 16KB
-
 Xilinx
 ~~~~~~
 
 .. list-table::
-    :header-rows:  1
+    :header-rows:  2
 
     * - Name
       - Platform
@@ -162,10 +114,17 @@ Xilinx
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_sifive_e310-arty`
-      - :ref:`platform_sifive`
+    * - :ref:`board_artix7_35t`
+      - :ref:`platform_shakti`
       - On-board
-      - FE310
-      - 450MHz
-      - 16MB
-      - 256MB
+      - E-Class
+      - 50MHz
+      - 0 bytes
+      - 128KB
+    * - :ref:`board_artix7_100t`
+      - :ref:`platform_shakti`
+      - On-board
+      - C-Class
+      - 50MHz
+      - 0 bytes
+      - 128MB
