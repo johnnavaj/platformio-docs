@@ -19,9 +19,8 @@ Arty FPGA Dev Kit
 Hardware
 --------
 
-Platform :ref:`platform_sifive`: SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
-
-
+Platform :ref:`platform_Shakti`: SHAKTI is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
+ 
 .. list-table::
     :header-rows:  1
 
@@ -107,4 +106,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_shakti_sdk`
-      - Open Source Software for Developing on the SiFive Freedom E Platform
+      - Open Source Software for Developing on Shakti Platform
