@@ -9,15 +9,15 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _platform_sifive:
+.. _platform_shakti:
 
-SiFive
+Shakti
 ======
 
 :Configuration:
-  :ref:`projectconf_env_platform` = ``sifive``
+  :ref:`projectconf_env_platform` = ``shakti``
 
-SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+Platform SHAKTI is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
 For more detailed information please visit `vendor site <https://sifive.com?utm_source=platformio&utm_medium=docs>`_.
 
