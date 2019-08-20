@@ -105,7 +105,7 @@ Xilinx
 ~~~~~~
 
 .. list-table::
-    :header-rows:  2
+    :header-rows:  1
 
     * - Name
       - Platform
