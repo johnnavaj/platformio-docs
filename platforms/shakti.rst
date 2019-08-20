@@ -29,17 +29,11 @@ For more detailed information please visit `vendor site <https://sifive.com?utm_
 Examples
 --------
 
-Examples are listed from `SiFive development platform repository <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Shakti development platform repository <https://github.com/platformio/platform-shakti/tree/develop/examples>`_:
 
-* `freedom-e-sdk_hello <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_hello?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_multicore-hello <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_multicore-hello?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_sifive-welcome <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_sifive-welcome?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_spi <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_spi?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_test-coreip <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_test-coreip?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_timer-interrupt <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_timer-interrupt?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_user-mode <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_user-mode?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_user-syscall <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_user-syscall?utm_source=platformio&utm_medium=docs>`_
-* `native-blink_asm <https://github.com/platformio/platform-sifive/tree/master/examples/native-blink_asm?utm_source=platformio&utm_medium=docs>`_
+* `shakti-sdk_uart-hello<https://github.com/platformio/platform-shakti/tree/develop/examples/shakti-sdk_uart-hello>`_
+* `shakti-sdk_gpio-keypad <https://github.com/platformio/platform-shakti/tree/develop/examples/shakti-sdk_gpio-keypad>`_
+* `shakti-sdk_i2c-lm75 <https://github.com/platformio/platform-shakti/tree/develop/examples/shakti-sdk_i2c-lm75>`_
 
 Debugging
 ---------
@@ -69,41 +63,32 @@ On-Board Debug Tools
 Boards listed below have on-board debug probe and **ARE READY** for debugging!
 You do not need to use/buy external debug probe.
 
-
 .. list-table::
     :header-rows:  1
 
     * - Name
+      - Platform
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_sifive_e310-arty`
-      - FE310
-      - 450MHz
-      - 16MB
-      - 256MB
-    * - :ref:`board_sifive_hifive-unleashed`
-      - FU540
-      - 1500MHz
-      - 32MB
-      - 8GB
-    * - :ref:`board_sifive_hifive1`
-      - FE310
-      - 320MHz
-      - 16MB
-      - 16KB
-    * - :ref:`board_sifive_hifive1-revb`
-      - FE310
-      - 320MHz
-      - 16MB
-      - 16KB
-
+    * - :ref:`board_artix7_35t`
+      - :ref:`platform_shakti`
+      - E-Class
+      - 50MHz
+      - 0KB
+      - 128KB
+    * - :ref:`board_artix7_100t`
+      - :ref:`platform_shakti`
+      - C-Class
+      - 50MHz
+      - 0KB
+      - 128MB
 
 Stable and upstream versions
 ----------------------------
 
-You can switch between `stable releases <https://github.com/platformio/platform-sifive/releases>`__
+You can switch between `stable releases <https://github.com/platformio/platform-shakti/releases>`__
 of SiFive development platform and the latest upstream version using
 :ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
 
@@ -114,12 +99,7 @@ Stable
 
     ; Latest stable version
     [env:latest_stable]
-    platform = sifive
-    board = ...
-
-    ; Custom stable version
-    [env:custom_stable]
-    platform = sifive@x.y.z
+    platform = shakti
     board = ...
 
 Upstream
@@ -128,7 +108,7 @@ Upstream
 .. code-block:: ini
 
     [env:upstream_develop]
-    platform = https://github.com/platformio/platform-sifive.git
+    platform = https://github.com/platformio/platform-shakti.git
     board = ...
 
 
