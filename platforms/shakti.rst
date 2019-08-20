@@ -31,7 +31,7 @@ Examples
 
 Examples are listed from `Shakti development platform repository <https://github.com/platformio/platform-shakti/tree/develop/examples>`_:
 
-* `shakti-sdk_uart-hello<https://github.com/platformio/platform-shakti/tree/develop/examples/shakti-sdk_uart-hello>`_
+* `shakti-sdk_uart-hello <https://github.com/platformio/platform-shakti/tree/develop/examples/shakti-sdk_uart-hello>`_
 * `shakti-sdk_gpio-keypad <https://github.com/platformio/platform-shakti/tree/develop/examples/shakti-sdk_gpio-keypad>`_
 * `shakti-sdk_i2c-lm75 <https://github.com/platformio/platform-shakti/tree/develop/examples/shakti-sdk_i2c-lm75>`_
 
@@ -55,7 +55,6 @@ You can switch between debugging :ref:`debugging_tools` using
 .. warning::
     You will need to install debug tool drivers depending on your system.
     Please click on compatible debug tool below for the further instructions.
-
 
 On-Board Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
@@ -121,8 +120,8 @@ Packages
     * - Name
       - Description
 
-    * - `framework-freedom-e-sdk <https://github.com/sifive/freedom-e-sdk?utm_source=platformio&utm_medium=docs>`__
-      - Open Source Software for Developing on the SiFive Freedom E Platform
+    * - `framework-shakti-sdk <https://gitlab.com/shaktiproject/software/shakti-sdk>`__
+      - Open Source Software for Developing on the Shakti Platform
 
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
@@ -140,15 +139,11 @@ Packages
     **Linux Users**:
 
         * Install "udev" rules :ref:`faq_udev_rules`
-        * Raspberry Pi users, please read this article
-          `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
-
-
+      
     **Windows Users:**
 
         Please check that you have a correctly installed USB driver from board
         manufacturer
-
 
 Frameworks
 ----------
@@ -158,7 +153,7 @@ Frameworks
     * - Name
       - Description
 
-    * - :ref:`framework_freedom-e-sdk`
+    * - :ref:`framework_shakti-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
 Boards
@@ -170,52 +165,29 @@ Boards
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
 
-SiFive
+Shakti
 ~~~~~~
 
 .. list-table::
     :header-rows:  1
 
     * - Name
-      - Debug
+      - Platform
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_sifive_hifive-unleashed`
-      - On-board
-      - FU540
-      - 1500MHz
-      - 32MB
-      - 8GB
-    * - :ref:`board_sifive_hifive1`
-      - On-board
-      - FE310
-      - 320MHz
-      - 16MB
-      - 16KB
-    * - :ref:`board_sifive_hifive1-revb`
-      - On-board
-      - FE310
-      - 320MHz
-      - 16MB
-      - 16KB
+    * - :ref:`board_artix7_35t`
+      - :ref:`platform_shakti`
+      - E-Class
+      - 50MHz
+      - 0KB
+      - 128KB
+    * - :ref:`board_artix7_100t`
+      - :ref:`platform_shakti`
+      - C-Class
+      - 50MHz
+      - 0KB
+      - 128MB
 
-Xilinx
-~~~~~~
 
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_sifive_e310-arty`
-      - On-board
-      - FE310
-      - 450MHz
-      - 16MB
-      - 256MB
